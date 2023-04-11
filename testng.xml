@@ -6,5 +6,16 @@
 			<class name="tests.StcTvPlanTests" />
 		</classes>
 	</test> <!-- Test -->
-
+	<test name="FireFox Test">
+		<parameter name="browserName" value="Firefox"></parameter>
+		<classes>
+			<class name="tests.StcTvPlanTests" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Edge Test">
+		<parameter name="browserName" value="Edge"></parameter>
+		<classes>
+			<class name="tests.StcTvPlanTests" />
+		</classes>
+	</test> <!-- Test -->
 </suite>

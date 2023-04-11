@@ -20,7 +20,7 @@ public class StcTvPlanTests extends TestBase{
     }
 	
 	@Attachment
-	@Test(enabled = false ,description="checking each plan in country" , dataProvider = "Countries")
+	@Test(enabled = true ,description="checking each plan in country" , dataProvider = "Countries")
     public void checkStcTvPlanType(String index)
     {
 		StcTvPlanPage stctvplanpage = new StcTvPlanPage();
@@ -30,7 +30,7 @@ public class StcTvPlanTests extends TestBase{
     }
 	
 	@Attachment
-	@Test(enabled = false ,description="checking each plan in country" , dataProvider = "Countries")
+	@Test(enabled = true ,description="checking each plan in country" , dataProvider = "Countries")
     public void checkStcTvPlanCurrency(String index)
     {
 		StcTvPlanPage stctvplanpage = new StcTvPlanPage();
