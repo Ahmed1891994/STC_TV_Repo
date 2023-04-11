@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="herokuapp Suite" thread-count="3">
+	<test name="Chrome Test">
+		<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			<class name="tests.StcTvPlanTests" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite>
