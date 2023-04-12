@@ -1,7 +1,7 @@
 version: "3"
 services: 
    hub: 
-      image: selenium/hub
+      image: selenium/hub:latest
       ports:
          - "4444:4444"
          - "4443:4443"
@@ -11,7 +11,7 @@ services:
          GRID_BROWSER_TIMEOUT: 300
          GRID_TIME_OUT: 30
    chrome: 
-      image: selenium/node-chrome
+      image: selenium/node-chrome:latest
       depends_on: 
          - hub
       shm_size: 1gb
@@ -26,7 +26,7 @@ services:
       ports:
       - "5901:5900"
    firefox:
-      image: selenium/node-firefox
+      image: selenium/node-firefox:latest
       depends_on: 
          - hub
       shm_size: 1gb
@@ -41,7 +41,7 @@ services:
       ports:
       - "5902:5900"       
    edge: 
-      image: selenium/node-edge
+      image: selenium/node-edge:latest
       depends_on: 
          - hub
       shm_size: 1gb
