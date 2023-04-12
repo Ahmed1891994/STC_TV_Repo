@@ -10,6 +10,7 @@ services:
       image: selenium/node-chrome:latest
       depends_on: 
          - hub
+      shm_size: 1gb
       environment: 
          - HUBHOST=hub
          - SE_EVENT_BUS_HOST=hub
@@ -19,6 +20,7 @@ services:
       image: selenium/node-firefox:latest
       depends_on: 
          - hub
+      shm_size: 1gb
       environment: 
          - HUBHOST=hub
          - SE_EVENT_BUS_HOST=hub
@@ -28,6 +30,7 @@ services:
       image: selenium/node-edge:latest
       depends_on: 
          - hub
+      shm_size: 1gb
       environment: 
          - HUBHOST=hub
          - SE_EVENT_BUS_HOST=hub
